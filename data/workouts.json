@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "exerciseId": 1,
+        "exerciseName": "Bench Press",
+        "category": "Chest",
+        "difficulty": "Intermediate",
+        "sets": 4,
+        "reps": 11,
+        "weight": 20,
+        "duration": 30,
+        "calories": 80,
+        "date": "2026-08-13",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "exerciseId": 1,
+        "exerciseName": "Bench Press",
+        "sets": 4,
+        "reps": 12,
+        "weight": 0,
+        "duration": 10,
+        "calories": 80,
+        "date": "2026-08-13",
+        "time": "16:25:20",
+        "status": "Completed"
+    }
+]

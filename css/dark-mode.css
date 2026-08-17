@@ -1,0 +1,55 @@
+body.dark-mode {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .dashboard-card,
+body.dark-mode .stat-card,
+body.dark-mode .form-card,
+body.dark-mode .table-card,
+body.dark-mode .workout-panel,
+body.dark-mode .exercise-card,
+body.dark-mode .category-card,
+body.dark-mode .food-card,
+body.dark-mode .nutrition-box {
+    background: #1e293b;
+    color: #e5e7eb;
+}
+
+body.dark-mode .navbar {
+    border-color: #334155;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+    background: #0f172a;
+    color: white;
+    border-color: #475569;
+}
+
+body.dark-mode .quick-actions a {
+    background: #334155;
+}
+
+body.dark-mode .quick-actions a:hover {
+    background: #166534;
+}
+
+body.dark-mode .data-table td {
+    border-color: #334155;
+}
+
+body.dark-mode .data-table tr:hover {
+    background: #334155;
+}
+
+body.dark-mode .nutrition-value,
+body.dark-mode .exercise-meta span {
+    background: #334155;
+}
+
+body.dark-mode .sidebar {
+    background: #020617;
+}

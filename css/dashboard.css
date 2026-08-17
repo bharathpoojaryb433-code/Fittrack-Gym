@@ -1,0 +1,102 @@
+.dashboard-header {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.dashboard-header p {
+    color: #d1d5db;
+}
+
+.welcome-text {
+    color: #22c55e !important;
+    font-weight: 700;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.dashboard-card h2 {
+    margin-bottom: 18px;
+}
+
+.progress-box {
+    margin-top: 15px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 70%;
+    background: #22c55e;
+    border-radius: 20px;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.quick-actions a {
+    background: #f3f4f6;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.quick-actions a:hover {
+    background: #dcfce7;
+    transform: translateY(-2px);
+}
+
+.goal-card {
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-card {
+    transition: .3s;
+}
+
+@media(max-width:700px) {
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header h1 {
+        font-size: 25px;
+    }
+}

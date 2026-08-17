@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<section id="loginPage" class="page">
+    <div class="login-box">
+
+        <div class="pet-animation">
+            <div id="loginPet">🐶</div>
+            <div class="shadow"></div>
+        </div>
+
+        <h1>🐾 Virtual Pet</h1>
+        <p>Take care of your lovely pet!</p>
+
+        <input type="text" id="playerName" placeholder="Enter your name">
+
+        <select id="petType">
+            <option value="dog">🐶 Dog</option>
+            <option value="cat">🐱 Cat</option>
+        </select>
+
+        <input type="text" id="petName" placeholder="Enter pet name">
+
+        <button onclick="startGame()">Start Game 🚀</button>
+        <audio id="dogBark" src="sounds/dog-bark.mp3"></audio>
+    </div>
+</section>
+
+
+<!-- GAME PAGE -->
+<section id="gamePage" class="page hidden">
+
+    <header>
+        <h1>🐾 Virtual Pet</h1>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="menu">
+            <button onclick="showHome()">🏠 Home</button>
+            <button onclick="feedPet()">🍖 Feed</button>
+            <button onclick="playPet()">🎾 Play</button>
+            <button onclick="sleepPet()">😴 Sleep</button>
+            <button onclick="carePet()">❤️ Care</button>
+            <button onclick="openGame()">🎮 Mini Game</button>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <main id="homeSection">
+
+        <div class="welcome">
+            <h2>Hello, <span id="playerDisplay"></span>! 👋</h2>
+            <p>Take care of <b id="petNameDisplay"></b></p>
+        </div>
+
+        <div class="pet-card">
+
+            <div class="pet-area">
+                <div id="petDisplay">🐶</div>
+                <div class="pet-shadow"></div>
+                <p id="petMessage">I am happy! ❤️</p>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span>🍖 Hunger</span>
+                    <div class="bar">
+                        <div id="hungerBar"></div>
+                    </div>
+                    <b id="hungerText">80</b>
+                </div>
+
+                <div class="stat">
+                    <span>❤️ Happiness</span>
+                    <div class="bar">
+                        <div id="happyBar"></div>
+                    </div>
+                    <b id="happyText">80</b>
+                </div>
+
+                <div class="stat">
+                    <span>⚡ Energy</span>
+                    <div class="bar">
+                        <div id="energyBar"></div>
+                    </div>
+                    <b id="energyText">80</b>
+                </div>
+
+                <div class="stat">
+                    <span>💚 Health</span>
+                    <div class="bar">
+                        <div id="healthBar"></div>
+                    </div>
+                    <b id="healthText">100</b>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="actions">
+
+            <button onclick="feedPet()">
+                🍖
+                <span>Feed</span>
+            </button>
+
+            <button onclick="playPet()">
+                🎾
+                <span>Play</span>
+            </button>
+
+            <button onclick="sleepPet()">
+                😴
+                <span>Sleep</span>
+            </button>
+
+            <button onclick="carePet()">
+                ❤️
+                <span>Care</span>
+            </button>
+
+        </div>
+
+
+        <div class="coin-box">
+            🪙 Coins: <span id="coins">0</span>
+        </div>
+
+    </main>
+
+
+    <!-- MINI GAME -->
+    <section id="miniGame" class="hidden">
+
+        <h2>🎮 Catch the Ball</h2>
+
+        <p>Click the ball as many times as you can!</p>
+
+        <h3>Score: <span id="score">0</span></h3>
+
+        <div id="gameArea">
+            <button id="ball" onclick="catchBall()">⚽</button>
+        </div>
+
+        <button class="restart" onclick="restartGame()">
+            🔄 Restart Game
+        </button>
+
+        <button onclick="showHome()">
+            🏠 Back Home
+        </button>
+
+    </section>
+
+</section>
+
+
+<script src="script.js"></script>
+<audio id="dogBark" src="sounds/dog-bark.mp3"></audio>
+<audio id="catMeow" src="sounds/cat-meow.mp3"></audio>
+</body>
+</html>

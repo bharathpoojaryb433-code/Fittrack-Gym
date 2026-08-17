@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Basic",
+        "price": 999,
+        "duration": "1 Month",
+        "description": "Gym access and basic workout tracking"
+    },
+    {
+        "id": 2,
+        "name": "Premium",
+        "price": 1999,
+        "duration": "1 Month",
+        "description": "Gym access, workout and nutrition tracking"
+    },
+    {
+        "id": 3,
+        "name": "VIP",
+        "price": 2999,
+        "duration": "1 Month",
+        "description": "Complete fitness and nutrition program"
+    }
+]

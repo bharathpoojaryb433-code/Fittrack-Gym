@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "FITTRACK Owner",
+        "email": "admin@fittrack.com",
+        "password": "admin123",
+        "role": "owner"
+    },
+    {
+        "id": 2,
+        "name": "Bharath",
+        "email": "member@fittrack.com",
+        "password": "member123",
+        "role": "member"
+    }
+]

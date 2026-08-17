@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Bench Press",
+        "category": "Chest",
+        "difficulty": "Intermediate",
+        "target": "Chest",
+        "sets": 4,
+        "reps": 12,
+        "calories": 80,
+        "image": "assets/images/exercises/bench-press.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Squats",
+        "category": "Legs",
+        "difficulty": "Beginner",
+        "target": "Legs",
+        "sets": 4,
+        "reps": 15,
+        "calories": 100,
+        "image": "assets/images/exercises/squats.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Crunches",
+        "category": "Abs",
+        "difficulty": "Beginner",
+        "target": "Abs",
+        "sets": 3,
+        "reps": 20,
+        "calories": 50,
+        "image": "assets/images/exercises/crunches.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Biceps Curl",
+        "category": "Arms",
+        "difficulty": "Beginner",
+        "target": "Biceps",
+        "sets": 3,
+        "reps": 12,
+        "calories": 60,
+        "image": "assets/images/exercises/biceps.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Running",
+        "category": "Cardio",
+        "difficulty": "Intermediate",
+        "target": "Full Body",
+        "sets": 1,
+        "reps": 30,
+        "calories": 250,
+        "image": "assets/images/exercises/running.jpg"
+    }
+]

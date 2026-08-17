@@ -1,0 +1,166 @@
+@media (max-width: 900px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .menu-button {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-brand {
+        display: none;
+    }
+
+    .login-box {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .page-content {
+        padding: 18px;
+    }
+
+    .navbar {
+        padding: 0 18px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .login-box {
+        padding: 30px 20px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 600px;
+
+        padding: 30px 20px;
+
+        display: block;
+    }
+
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+
+    .hero-buttons {
+        position: relative;
+
+        z-index: 10;
+
+        flex-direction: column;
+    }
+
+
+    .hero-buttons a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .hero-image {
+        width: 100%;
+
+        height: 300px;
+
+        right: 0;
+
+        bottom: 0;
+    }
+
+
+    .hero-image img {
+        height: 330px;
+
+        max-width: 90%;
+    }
+
+
+    .hero-glow {
+        width: 250px;
+
+        height: 250px;
+
+        right: 50%;
+
+        transform: translateX(50%);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-section {
+        min-height: 570px;
+
+        padding: 25px 18px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+
+    .hero-image {
+        height: 270px;
+    }
+
+
+    .hero-image img {
+        height: 290px;
+    }
+
+}

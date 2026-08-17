@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "High Protein Chicken Bowl",
+        "category": "Lunch",
+        "calories": 520,
+        "protein": 42,
+        "carbs": 48,
+        "fat": 15,
+        "ingredients": "Chicken, Brown Rice, Broccoli",
+        "image": "assets/images/food/chicken-bowl.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Oats and Banana",
+        "category": "Breakfast",
+        "calories": 350,
+        "protein": 12,
+        "carbs": 55,
+        "fat": 8,
+        "ingredients": "Oats, Banana, Milk",
+        "image": "assets/images/food/oats.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Paneer Salad",
+        "category": "Dinner",
+        "calories": 420,
+        "protein": 28,
+        "carbs": 20,
+        "fat": 22,
+        "ingredients": "Paneer, Lettuce, Tomato, Cucumber",
+        "image": "assets/images/food/paneer-salad.jpg"
+    }
+]

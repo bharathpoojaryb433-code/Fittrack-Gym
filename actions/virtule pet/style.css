@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dff9fb, #c7ecee);
+    color: #222;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* LOGIN */
+
+#loginPage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 400px;
+    padding: 35px;
+    background: white;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.login-box h1 {
+    color: #ff6b6b;
+    margin-bottom: 8px;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+.login-box input:focus,
+.login-box select:focus {
+    border-color: #ff6b6b;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #ee5253;
+}
+
+
+/* PET LOGIN ANIMATION */
+
+.pet-animation {
+    height: 160px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginPet {
+    font-size: 90px;
+    animation: petJump 1.5s infinite ease-in-out;
+    z-index: 2;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 15px;
+    width: 90px;
+    height: 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 50%;
+    animation: shadowMove 1.5s infinite ease-in-out;
+}
+
+@keyframes petJump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes shadowMove {
+    0%, 100% {
+        transform: scale(1);
+        opacity: .4;
+    }
+
+    50% {
+        transform: scale(.7);
+        opacity: .2;
+    }
+}
+
+
+/* HEADER */
+
+header {
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,.1);
+}
+
+header h1 {
+    color: #ff6b6b;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav button,
+.menu-btn {
+    border: none;
+    background: #ffecec;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 22px;
+}
+
+
+/* HOME */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+}
+
+
+/* PET CARD */
+
+.pet-card {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.pet-area {
+    text-align: center;
+}
+
+#petDisplay {
+    font-size: 150px;
+    animation: petBounce 2s infinite;
+}
+
+.pet-shadow {
+    width: 120px;
+    height: 25px;
+    background: rgba(0,0,0,.15);
+    border-radius: 50%;
+    margin: auto;
+}
+
+#petMessage {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes petBounce {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* STATS */
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat {
+    position: relative;
+}
+
+.stat span {
+    font-weight: bold;
+}
+
+.bar {
+    width: 100%;
+    height: 18px;
+    background: #eee;
+    border-radius: 20px;
+    margin-top: 7px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    width: 80%;
+    background: #2ecc71;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.stat b {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* ACTION BUTTONS */
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.actions button {
+    padding: 18px;
+    border: none;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 7px 20px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.actions button span {
+    display: block;
+    font-size: 15px;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.actions button:hover {
+    transform: translateY(-5px);
+}
+
+
+/* COINS */
+
+.coin-box {
+    width: fit-content;
+    margin: 25px auto;
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* MINI GAME */
+
+#miniGame {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+#miniGame h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#gameArea {
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #ff6b6b;
+}
+
+#ball {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#miniGame button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 15px;
+        background: white;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,.2);
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .pet-card {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #petDisplay {
+        font-size: 120px;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+}

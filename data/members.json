@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "userId": 2,
+        "name": "Bharath",
+        "age": 22,
+        "height": 175,
+        "weight": 70,
+        "goal": "Build Muscle",
+        "level": "Intermediate",
+        "membershipId": 1,
+        "phone": "9876543210",
+        "profileImage": ""
+    },
+    {
+        "id": 2,
+        "userId": 0,
+        "name": "bharth",
+        "age": 20,
+        "height": 165,
+        "weight": 79,
+        "goal": "Build Muscle",
+        "level": "Beginner",
+        "membershipId": 0,
+        "phone": "8904089051",
+        "profileImage": ""
+    }
+]

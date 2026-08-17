@@ -1,0 +1,100 @@
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    max-width: 900px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    outline: none;
+    background: white;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34,197,94,.1);
+}
+
+.primary-btn {
+    border: none;
+    padding: 13px 22px;
+    background: #22c55e;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.primary-btn:hover {
+    background: #16a34a;
+}
+
+.secondary-btn {
+    padding: 12px 20px;
+    background: #e5e7eb;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+.danger-btn {
+    padding: 10px 16px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:650px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
